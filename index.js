@@ -1,5 +1,8 @@
-fullName = (first, last) => {
-    return `My first name ${first} and second is ${last}`;
-}
+// fullName = (first, last) => {
+//     return `My first name ${first} and second is ${last}`;
+// }
 
-alert(fullName('Damian', 'Galeano'))
+// alert(fullName('Damian', 'Galeano'))
+
+
+console.log('');
