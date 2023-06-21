@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <title></title>
-  <style>
-    .activeHeading {
-        color: firebrick;
-        font-size: 8em;
-        cursor: pointer;
-    }
 
-    .nonActiveHeading {
-        color: cornflowerblue;
-        font-size: 18em;
-        cursor: pointer;
-    }
-  </style>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        .activeHeading {
+            color: firebrick;
+            font-size: 8em;
+            cursor: pointer;
+        }
+
+        .nonActiveHeading {
+            color: cornflowerblue;
+            font-size: 12em;
+            cursor: pointer;
+        }
+
+        .back {
+            background-color: rgb(70, 0, 136);
+        }
+    </style>
 </head>
-<body>
-  <div id="mainHeading" class="nonActiveHeading">
-    Hy There 
-  </div>
+
+<body class="back">
+    <div id="mainHeading" class="activeHeading">
+        Hy There
+    </div>
 </body>
 <script>
-    const myQuery = document.getElementById('mainHeading');
+    const heading = document.getElementById('mainHeading');
 
-    myQuery.onclick = () => {
-        console.log('I get the message')
+    heading.onclick = () => {
+        if (heading.classList.contains('activeHeading')) {
+            heading.classList.remove('activeHeading');
+            heading.classList.add('nonActiveHeading');
+        } else {
+            heading.classList.remove('nonActiveHeading');
+            heading.classList.add('activeHeading')
+        }
     }
+
+    
 </script>
+
+
 </html>
