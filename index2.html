@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+  <style>
+    .activeHeading {
+        color: firebrick;
+        font-size: 8em;
+        cursor: pointer;
+    }
+
+    .nonActiveHeading {
+        color: cornflowerblue;
+        font-size: 18em;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="mainHeading" class="nonActiveHeading">
+    Hy There 
+  </div>
+</body>
+<script>
+    const myQuery = document.getElementById('mainHeading');
+
+    myQuery.onclick = () => {
+        console.log('I get the message')
+    }
+</script>
+</html>
