@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(244, 0, 163);
+}
+
+.hideElement {
+    visibility: hidden;
+}
+
+.showElement {
+    display: block;
+}
+
