@@ -10,3 +10,13 @@ body {
     display: block;
 }
 
+
+.mainHeading {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}   
+
+
+.subHeading {
+    font-size: 2em;
+}
