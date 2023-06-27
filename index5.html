@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+</head>
+
+<body>
+    <div id="dateComponent"></div>
+    <!-- <button onclick="renderDate()">My Date</button> -->
+    <button id="btn">My Date</button>
+
+</body>
+<script>
+    const dateElement = document.getElementById('dateComponent');
+    const myButton = document.getElementById('btn');
+
+    // renderDate = () => {
+    //     dateElement.innerHTML = Date();
+    // }
+
+    myButton.addEventListener('click', (event) => {
+        dateElement.innerHTML = Date();
+    })
+</script>
+
+</html>
