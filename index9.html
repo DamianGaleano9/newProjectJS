@@ -10,14 +10,21 @@
     <input type="text" class="msgInput">
 
     <div>
-        Characters left <span class="msgCounter">144</span>
+        Characters left <span class="msgCounter">9</span>
+    </div>
+
+    <input type="text" class="tagInput">
+
+    <div>
+        Characters left <span class="tagCounter">144</span>
     </div>
 </body>
 <script>
 
     const msgInput = document.querySelector('.msgInput');
     const msgCounter = document.querySelector('.msgCounter');
-    const max = 144;
+    const tagInput = document.querySelector('.tagInput');
+    const tagCounter = document.querySelector('.tagCounter');
 
     // ensure Character Counter
     const ensureContentLength = (content, max) => {
@@ -30,9 +37,18 @@
 
 
     // Event listener watch for keyUp
-    msgInput.onkeyup = function () {
-        msgCounter.innerHTML = max -this.value.length;
+
+    const textFieldLengthValidator = (textField, counter, maxCount) => {
+        textField.onkeyup = function () {
+            counter.innerHTML = maxCount - this.value.length;
+
+
+            if (!ensureContentLength(this.value, (maxCount - 1))) {
+                textField.disable = true;
+            }
+        }
     }
+
 
 </script>
 
