@@ -15,8 +15,10 @@
     <span>Refreshing</span>
     <p>Beverages</p>
     <div id="lime">A lime</div> -->
-  <div id="quote"></div>
-  <div id="author"></div>
+  <!-- <div id="quote"></div>
+  <div id="author"></div> -->
+  <div id='parent'></div>
+
 </body>
 <script>
   // var collections = document.getElementsByClassName('items')[1];
@@ -28,13 +30,16 @@
   // var getAllTags = document.querySelectorAll('div, span, p')
   // console.log(getId);
   // console.log(getAllTags);
-  const getQuote = document.getElementById('quote');
-  const getAuthor = document.getElementById('author');
+  // const getQuote = document.getElementById('quote');
+  // const getAuthor = document.getElementById('author');
 
-  getQuote.innerHTML = "Innovation distinguishes between a leader and a follower";
-  getAuthor.innerHTML = "Steve Jobs";
+  // getQuote.innerHTML = "Innovation distinguishes between a leader and a follower";
+  // getAuthor.innerHTML = "Steve Jobs";
 
-
+  var getId = document.getElementById('parent');
+  var createP = document.createElement('p');
+  createP.textContent = 'Hello';
+  getId.appendChild(createP);
 
 </script>
 
