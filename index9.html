@@ -10,13 +10,14 @@
     <input type="text" class="msgInput">
 
     <div>
-        Characters left <span class="msgCounter">9</span>
+        Characters left <span class="msgCounter">144</span>
     </div>
+    <hr>
 
     <input type="text" class="tagInput">
 
     <div>
-        Characters left <span class="tagCounter">144</span>
+        Characters left <span class="tagCounter">20</span>
     </div>
 </body>
 <script>
@@ -43,13 +44,14 @@
             counter.innerHTML = maxCount - this.value.length;
 
 
-            if (!ensureContentLength(this.value, (maxCount - 1))) {
+            if (ensureContentLength(this.value, (maxCount - 1))) {
                 textField.disable = true;
             }
         }
     }
 
-
+    textFieldLengthValidator(msgInput, msgCounter, 3);
+    textFieldLengthValidator(tagInput, tagCounter, 2)
 </script>
 
 </html>
