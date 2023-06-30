@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+<body>
+  <div class="widget">
+    <input type="text" id="chat-input">
+    <button id="msgBtn" onclick="sendMessage()">Submit</button>
+    <div class="chat-wrapper"></div> 
+  </div>
+</body>
+<script>
+    // const getChat = document.querySelector('.chat-wrapper');
+    // const createParagraph = document.createElement('p');
+    // createParagraph.textContent = "My content"
+    // getChat.appendChild(createParagraph);
+    
+    // const getInput = document.getElementById('msgBtn');
+
+    function sendMessage() {
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('chatMsg');
+        let chatInput = document.querySelector('#chat-input').value;
+        const newContent = document.createTextNode(chatInput); 
+
+    }
+
+
+</script>
+</html>
