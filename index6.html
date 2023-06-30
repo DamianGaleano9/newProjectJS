@@ -17,14 +17,176 @@
     <div id="lime">A lime</div> -->
   <!-- <div id="quote"></div>
   <div id="author"></div> -->
-  <div id='parent'></div>
+  <!-- <div id='parent'></div> -->
+
+  <div class="post-wrapper">
+    <div class="post"></div>
+    <div class="post"></div>
+    <div class="post"></div>
+  </div>
 
 </body>
 <script>
+
+const div = document.querySelectorAll(".post");
+div.forEach(el => el.remove());
+
+var tag = document.createElement("p"); 
+tag.classList.add("flash-message")
+var text = document.createTextNode("Posts coming soon!");
+
+tag.appendChild(text); 
+var element = document.getElementsByClassName("post-wrapper")[0].appendChild(tag);
+
+
+
+
+
+    // const getPost = document.querySelectorAll('.post');
+    // getPost.forEach(e => e.remove());
+
+    // const createP = document.createElement('p');
+    // createP.classList.add('flash-message');
+    // const newContent = document.createTextNode('Post comming soon');
+    
+    // createP.appendChild(newContent);
+    // const getWrapper = document.getElementsByClassName('post-wrapper')[0].appendChild(createP);
+
+
+
+
+
+
+  // function deletePost() {
+  //   const getPost = document.querySelectorAll('.post');
+  //   getPost.forEach(e => e.remove());
+  //   const createP = document.createElement('p');
+  //   createP.classList.add('flash-message');
+  //   const newContent = document.createTextNode('Post comming soon');
+
+  //   createP.appendChild(newContent);
+  //   const myWrapp= document.getElementsByClassName('post-wrapper')[0].appendChild(createP)
+
+  // }
+
+  // deletePost();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function deletePost() {
+//   const getPost = document.querySelectorAll('.post');
+//   getPost.forEach(e => e.remove());
+//   const getWrapper = document.querySelector('.post-wrapper');
+//   const createP = document.createElement('p');
+//   createP.classList.add('flash-message');
+//   const createContent = document.createTextNode('Post comming soon!')
+
+
+//   createP.appendChild(createContent);
+//   getWrapper.appendChild(createP);
+
+// }
+
+// deletePost();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // function deletePost() {
+  //   const getPost = document.querySelectorAll('.post');
+  //   getPost.forEach(element => element.remove())
+  //   const addWrapper = document.querySelector('.post-wrapper');
+  //   const pElement = document.createElement('p');
+  //   pElement.classList.add('flash-message');
+  //   const newParagraph = document.createTextNode('Posts coming soon!')
+
+
+  //   pElement.appendChild(newParagraph);
+  //   addWrapper.appendChild(pElement);
+  // }
+
+
+  // deletePost();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // var collections = document.getElementsByClassName('items')[1];
   // console.log(collections);
   // var dom = document.getElementById('getMe');
-  // dom.innerHTML = 'Hellaaaa World'    
+  // dom.innerHTML = 'Hellaaaa World'
 
   // var getId = document.getElementById('lime');
   // var getAllTags = document.querySelectorAll('div, span, p')
@@ -36,10 +198,14 @@
   // getQuote.innerHTML = "Innovation distinguishes between a leader and a follower";
   // getAuthor.innerHTML = "Steve Jobs";
 
-  var getId = document.getElementById('parent');
-  var createP = document.createElement('p');
-  createP.textContent = 'Hello';
-  getId.appendChild(createP);
+  // var getId = document.getElementById('parent');
+  // var createP = document.createElement('p');
+  // createP.textContent = 'Hello';
+  // getId.appendChild(createP);
+
+
+
+
 
 </script>
 
