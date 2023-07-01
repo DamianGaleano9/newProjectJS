@@ -19,24 +19,88 @@
   <div id="author"></div> -->
   <!-- <div id='parent'></div> -->
 
+  <!-- <div class="post-wrapper">
+    <div class="post"></div>
+    <div class="post"></div>
+    <div class="post"></div>
+  </div> -->
+<!-- 
+  <div id="wrapper"></div>
+  
   <div class="post-wrapper">
     <div class="post"></div>
     <div class="post"></div>
     <div class="post"></div>
-  </div>
+</div>
 
 </body>
-<script>
+<script> -->
 
-const div = document.querySelectorAll(".post");
-div.forEach(el => el.remove());
 
-var tag = document.createElement("p"); 
-tag.classList.add("flash-message")
-var text = document.createTextNode("Posts coming soon!");
+const getPost = document.querySelectorAll(".post");
+getPost.forEach(e => e.remove());
 
-tag.appendChild(text); 
-var element = document.getElementsByClassName("post-wrapper")[0].appendChild(tag);
+const createP = document.createElement("p");
+createP.classList.add("flash-message");
+const newPost = document.createTextNode("Post comming soon!");
+
+createP.appendChild(newPost);
+const getWrapper = document.getElementsByClassName("post-wrapper")[0].appendChild(createP);
+
+
+
+// const createSpan = document.createElement('span');
+// createSpan.classList.add('content');
+
+// const createContent = document.createTextNode('You got this!');
+
+// createSpan.appendChild(createContent);
+// const getIdWrapper = document.getElementById('wrapper');
+// getIdWrapper.insertBefore(createSpan, getIdWrapper[0]);
+
+
+// const createSpan = document.createElement('span');
+// createSpan.classList.add('content');
+
+// const createContent = document.createTextNode('You got this!');
+
+// createSpan.appendChild(createContent);
+// const getIdWrapper = document.getElementById('wrapper');
+// getIdWrapper.insertBefore(createSpan, getIdWrapper[0]);
+
+
+
+
+
+const getPost = document.querySelectorAll(".post");
+getPost.forEach(e => e.remove());
+
+const createP = document.createElement("p");
+createP.classList.add("flash-message");
+const newPost = document.createTextNode("Post comming soon!");
+
+createP.appendChild(newPost);
+const getWrapper = document.getElementsByClassName("post-wrapper")[0].appendChild(createP);
+
+
+  // createSpan = document.createElement('span');
+  // createSpan.classList.add('content');
+  // let createContent = document.createTextNode('You got this!');
+
+
+  // createSpan.appendChild(createContent);
+  // const getIdWrapper = document.getElementById('wrapper').appendChild(createSpan);
+
+
+// const div = document.querySelectorAll(".post");
+// div.forEach(el => el.remove());
+
+// var tag = document.createElement("p"); 
+// tag.classList.add("flash-message")
+// var text = document.createTextNode("Posts coming soon!");
+
+// tag.appendChild(text); 
+// var element = document.getElementsByClassName("post-wrapper")[0].appendChild(tag);
 
 
 
@@ -60,7 +124,7 @@ var element = document.getElementsByClassName("post-wrapper")[0].appendChild(tag
   // function deletePost() {
   //   const getPost = document.querySelectorAll('.post');
   //   getPost.forEach(e => e.remove());
-  //   const createP = document.createElement('p');
+  4
   //   createP.classList.add('flash-message');
   //   const newContent = document.createTextNode('Post comming soon');
 
@@ -102,7 +166,6 @@ var element = document.getElementsByClassName("post-wrapper")[0].appendChild(tag
 //   const createP = document.createElement('p');
 //   createP.classList.add('flash-message');
 //   const createContent = document.createTextNode('Post comming soon!')
-
 
 //   createP.appendChild(createContent);
 //   getWrapper.appendChild(createP);
